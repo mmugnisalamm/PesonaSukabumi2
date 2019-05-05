@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Latihan</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="slide_1_title">Renang</string>
+    <string name="slide_1_desc">Nikmati fasilitas renang dengan pemandangan keren</string>
+    <string name="slide_2_title">Jet Ski </string>
+    <string name="slide_2_desc">Jelajahi pantai dengan gaya yang menantang</string>
+    <string name="slide_3_title">Diving</string>
+    <string name="slide_3_desc">View bawah laut yang menjadi sorotan dunia</string>
+    <string name="play_again_desc">Untuk mwlihatnya lagi Settings -> apps -> Intro View -> clear data</string>
+    <string name="play_again">Play Again</string>
+</resources>
