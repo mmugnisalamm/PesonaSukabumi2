@@ -2,7 +2,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_dark"
+    android:background="@android:color/holo_blue_bright"
     android:gravity="center">
 
     <LinearLayout
@@ -14,7 +14,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mie Goreng"
+            android:text="Penunjang Pariwisata"
             android:textColor="@android:color/white"
             android:layout_marginBottom="@dimen/slide_title"
             android:textSize="@dimen/slide_title"
@@ -22,14 +22,14 @@
         <ImageView
             android:layout_width="@dimen/img_width_height"
             android:layout_height="@dimen/img_width_height"
-            android:src="@drawable/ccc" />
+            android:src="@drawable/store2" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:paddingLeft="@dimen/desc_padding"
             android:paddingRight="@dimen/desc_padding"
-            android:text="Makanan yang enak sekali, apalagi saat cuaca dingin"
+            android:text="Gak Perlu Khawatir Buat Gak Nemu \nTempat Makan Recomended"
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="@dimen/slide_desc" />

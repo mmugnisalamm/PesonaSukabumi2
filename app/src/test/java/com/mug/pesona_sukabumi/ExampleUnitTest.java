@@ -1,4 +1,4 @@
-package com.example.latihan;
+package com.mug.pesona_sukabumi;
 
 import org.junit.Test;
 

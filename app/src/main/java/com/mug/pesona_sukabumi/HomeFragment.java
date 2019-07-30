@@ -1,34 +1,29 @@
-package com.example.latihan;
+package com.mug.pesona_sukabumi;
 
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
-import com.example.latihan.DailyActivityModel;
-import com.example.latihan.RecyclerViewAdapter;
+import androidx.fragment.app.Fragment;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.mug.pesona_sukabumi.R;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link DailyActivityFragment.OnFragmentInteractionListener} interface
+ * {@link HomeFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link DailyActivityFragment#newInstance} factory method to
+ * Use the {@link HomeFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class DailyActivityFragment extends Fragment {
+public class HomeFragment extends Fragment {
     View v;
-    private RecyclerView myRecyclerView;
-    private List<DailyActivityModel> dailyList;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -40,7 +35,7 @@ public class DailyActivityFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public DailyActivityFragment() {
+    public HomeFragment() {
         // Required empty public constructor
     }
 
@@ -50,11 +45,11 @@ public class DailyActivityFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment DailyActivityFragment.
+     * @return A new instance of fragment HomeFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static DailyActivityFragment newInstance(String param1, String param2) {
-        DailyActivityFragment fragment = new DailyActivityFragment();
+    public static HomeFragment newInstance(String param1, String param2) {
+        HomeFragment fragment = new HomeFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -65,25 +60,32 @@ public class DailyActivityFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        dailyList = new ArrayList<>();
-        dailyList.add(new DailyActivityModel("Tidur"));
-        dailyList.add(new DailyActivityModel("Makan"));
-        dailyList.add(new DailyActivityModel("Kuliah"));
-        dailyList.add(new DailyActivityModel("Bermain Game"));
-        dailyList.add(new DailyActivityModel("Ngopi"));
-        dailyList.add(new DailyActivityModel("Menikmati Senja"));
+        if (getArguments() != null) {
+            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
+        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        // Inflate the layout for this fragment
-        v = inflater.inflate(R.layout.fragment_daily_activity, container, false);
-        myRecyclerView = (RecyclerView) v.findViewById(R.id.daily_recyclerView);
-        RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(getContext(), dailyList);
-        myRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        myRecyclerView.setAdapter(recyclerViewAdapter);
+        v = inflater.inflate(R.layout.fragment_home, container, false);
+        WebView webView = (WebView) v.findViewById(R.id.webView);
+        webView.getSettings().setLoadsImagesAutomatically(true);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.getSettings().setDomStorageEnabled(true);
+
+        // Tiga baris di bawah ini agar laman yang dimuat dapat
+        // melakukan zoom.
+        webView.getSettings().setSupportZoom(true);
+        webView.getSettings().setBuiltInZoomControls(true);
+        webView.getSettings().setDisplayZoomControls(false);
+        // Baris di bawah untuk menambahkan scrollbar di dalam WebView-nya
+        webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
+        webView.setWebViewClient(new WebViewClient());
+        webView.loadUrl("https://sukabumiupdate.com/kategori/vakansi/wisata");
+
         return v;
     }
 

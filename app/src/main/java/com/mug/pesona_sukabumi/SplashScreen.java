@@ -1,9 +1,12 @@
-package com.example.latihan;
+package com.mug.pesona_sukabumi;
 
 import android.content.Intent;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.mug.pesona_sukabumi.R;
 
 public class SplashScreen extends AppCompatActivity {
 

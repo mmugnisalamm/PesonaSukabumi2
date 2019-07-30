@@ -1,13 +1,10 @@
-package com.example.latihan;
+package com.mug.pesona_sukabumi;
 
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,6 +14,12 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
+import com.mug.pesona_sukabumi.R;
 
 public class Welcome extends AppCompatActivity {
 
@@ -72,6 +75,7 @@ public class Welcome extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 launchHomeScreen();
+                finish();
             }
         });
 
@@ -86,6 +90,7 @@ public class Welcome extends AppCompatActivity {
                     viewPager.setCurrentItem(current);
                 } else {
                     launchHomeScreen();
+                    finish();
                 }
             }
         });
@@ -116,7 +121,7 @@ public class Welcome extends AppCompatActivity {
 
     private void launchHomeScreen() {
         prefManager.setFirstTimeLaunch(false);
-        startActivity(new Intent(Welcome.this, MainActivity.class));
+        startActivity(new Intent(Welcome.this, ActivityLogin.class));
         finish();
     }
 

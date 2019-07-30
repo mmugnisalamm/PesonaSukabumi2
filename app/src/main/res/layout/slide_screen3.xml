@@ -2,7 +2,7 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_dark"
+    android:background="@android:color/holo_blue_bright"
     android:gravity="center">
 
     <LinearLayout
@@ -14,7 +14,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Muhammad Mugnisalam M"
+            android:text="Berita Terkini Sukabumi"
             android:textColor="@android:color/white"
             android:textSize="@dimen/slide_title"
             android:layout_marginBottom="@dimen/slide_title"
@@ -23,14 +23,14 @@
         <ImageView
             android:layout_width="@dimen/img_width_height"
             android:layout_height="@dimen/img_width_height"
-            android:src="@drawable/poto" />
+            android:src="@drawable/newspaper" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:paddingLeft="@dimen/desc_padding"
             android:paddingRight="@dimen/desc_padding"
-            android:text="Inilah aku, dengan segala kekuranganku"
+            android:text="Gak Usah Takut Ketinggalan Berita"
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="@dimen/slide_desc" />
