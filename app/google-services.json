@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "430268599594",
+    "firebase_url": "https://alert-tempo-227104.firebaseio.com",
+    "project_id": "alert-tempo-227104",
+    "storage_bucket": "alert-tempo-227104.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430268599594:android:8bac5acdacc83263",
+        "android_client_info": {
+          "package_name": "com.example.pesona_sukabumi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430268599594-7ss2l9m9b2gn21tbelbef7lq61v0fhld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATHf9zMyKpX0NaFnNUwQdFXsm9c3-BIdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430268599594-7ss2l9m9b2gn21tbelbef7lq61v0fhld.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430268599594:android:211f9097666db57b",
+        "android_client_info": {
+          "package_name": "com.mug.pesona_sukabumi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430268599594-7ss2l9m9b2gn21tbelbef7lq61v0fhld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATHf9zMyKpX0NaFnNUwQdFXsm9c3-BIdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430268599594-7ss2l9m9b2gn21tbelbef7lq61v0fhld.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
